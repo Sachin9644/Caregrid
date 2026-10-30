@@ -135,7 +135,4 @@ cd android
 ---
 
  
-
-## 📄 License & Attribution
-Developed for academic submission under the **Mobile Application Development (MAD)** curriculum.  
-All emergency workflows and telemetry structures follow standard medical triage guidelines.
+ 
