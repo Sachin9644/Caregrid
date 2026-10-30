@@ -134,21 +134,7 @@ cd android
 
 ---
 
-## 🎓 Viva Defense / Oral Examination Guide
-
-### Q1: What makes this a "Hybrid" Mobile Application?
-> **Answer**: The application is written in standard web technologies (React, TypeScript, CSS) and packaged inside a native container using Capacitor. Capacitor creates a bridge between the JavaScript runtime and Android/iOS native APIs, enabling the app to access hardware capabilities (haptics, network status, native share dialogs, hardware back buttons) while maintaining a single, reusable codebase.
-
-### Q2: How does the application handle offline scenarios when network drops?
-> **Answer**: CareGrid uses an offline-first repository pattern backed by `@capacitor/preferences` (and `localStorage`). All verified hospital coordinates, phone hotlines, and initial emergency telemetry are locally cached upon first launch. When network drops, an ambient `OfflineBanner` alerts the user while keeping the entire emergency contact directory, bed reserve workflows, and blood appeals fully functional.
-
-### Q3: How is native hardware integration implemented?
-> **Answer**:
-> - **Haptics**: Tactile feedback is provided on critical actions (tapping SOS, reserving beds, posting blood appeals) using `@capacitor/haptics`.
-> - **Native Share Sheet**: Urgent blood donor appeals launch the OS-native share drawer using `@capacitor/share`.
-> - **Hardware Back Button**: Android's physical back button is handled by `@capacitor/app` (`CapApp.addListener('backButton')`), ensuring smooth modal dismissal and tab navigation before exiting the app.
-
----
+ 
 
 ## 📄 License & Attribution
 Developed for academic submission under the **Mobile Application Development (MAD)** curriculum.  
